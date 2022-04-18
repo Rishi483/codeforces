@@ -1,3 +1,3 @@
 # codeforces 
-COMPETETIVE PROGRAMMING REPOSITORY
-solution of codeforces questions
+COMPETETIVE PROGRAMMING REPOSITORY 
+#solution of codeforces questions
