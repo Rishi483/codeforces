@@ -2,7 +2,9 @@
 using namespace std;
 #define int long long
 #define end1 "\n"
-
+#define yes cout<<"YES"<<endl
+#define no cout<<"NO"<<endl
+#define pb push_back
 
 int gcd(int a, int b)
 {
@@ -12,28 +14,17 @@ int gcd(int a, int b)
 void solve(){
   int x,y;
   cin>>x>>y;
-  if(y<x){
+  if(x>y){
       cout<<0<<" "<<0<<endl;
       return;
   }
-  else if(x==y){
-      cout<<1<<" "<<1<<endl;
-      return;
+  int b=y/x;
+  if(y==b*x){
+      cout<<1<<" "<<b<<endl;
   }
   else{
-      int a=y/x;
-      for(int i=1;i<=a;i++){
-          for(int j=1;j<=a;j++){
-              if((pow(i,j)*x)==y){
-                  cout<<j<<" "<<i<<endl;
-                  return;
-              }
-          }
-      }
-       cout<<0<<" "<<0<<endl;
+      cout<<0<<" "<<0<<endl;
   }
-
-
 }
 
 int32_t main() {
